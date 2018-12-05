@@ -11,24 +11,34 @@
   "Aoc Day 4"
 
   (facts
-    "Task 1 Sample data"
+   "Task 1 Sample data"
 
-    (fact
-      "Strtegy 1 output"
-     (-> task-1-test-input
-         strategy-1
-         format-records) => 240))
+   (fact
+    "Stategy 1 output"
+    (-> task-1-test-input
+        strategy-1) => 240))
 
   (fact
     "Task 1"
 
-    (prn
-      "Result:"
-     (-> task-1-puzzle-input
-         strategy-1
-         format-records)))
+   (prn
+    "Result:"
+    (-> task-1-puzzle-input
+        strategy-1)))
 
+ (facts
+  "Task 2 Sample data"
 
+  (fact
+   "Stategy 2 output"
+   (-> task-1-test-input
+       strategy-2) => 4455))
 
-  )
+ (fact
+  "Task 2"
+
+  (prn
+   "Result:"
+   (-> task-1-puzzle-input
+       strategy-2))))
 
