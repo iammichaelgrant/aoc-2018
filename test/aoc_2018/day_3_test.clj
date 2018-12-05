@@ -14,8 +14,8 @@
     "Task 1 Sample data"
 
     (fact
-      "Checksum"
-      (count-overlapping-inches task-1-test-input) => 2))
+      "Overlapping Inches"
+      (count-overlapping-inches task-1-test-input) => 4))
 
   (fact
     "Task 1"
@@ -24,8 +24,16 @@
       "Result:"
       (count-overlapping-inches task-1-puzzle-input)))
 
+  (facts
+    "Task 2 Sample data"
 
+    (fact
+      "Unique Claim"
+      (find-unique-claim task-1-test-input) => "3"))
 
+  (fact
+    "Task 2"
 
-  )
-
+    (prn
+      "Result:"
+      (find-unique-claim task-1-puzzle-input))))
